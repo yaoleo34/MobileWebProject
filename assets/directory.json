@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Simon Law Firm",
+        "address": "4000 Fifth Avenue, Pittburgh, PA, 15213",
+        "phone": "412-000-000",
+        "lat": 40.44339748706071, 
+        "long":-79.95601431527484,
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra et ultrices neque ornare. Sit amet commodo nulla facilisi. Senectus et netus et malesuada fames. At volutpat diam ut venenatis tellus in metus. ",
+        "service": "law",
+        "tags": ["low income"]
+    }
+]

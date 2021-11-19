@@ -1,9 +1,9 @@
 var allServices;
 var currentServices;
+
 $.getJSON('assets/directory.json', function (responseObject) {
     allServices = responseObject;
     currentServices = allServices;
-    renderCard(currentServices[0]);
 });
 
 function updateModal(service) {
@@ -47,4 +47,52 @@ var renderCard = function (service) {
     cardButton.addEventListener('click', updateModal(service));
 };
 
+var renderServices = function () {
+    for (var i = 0; i < currentServices.length; i++) {
+        renderCard(currentServices[i]);
+    }
+}
 
+function clearServices() {
+    var content = document.getElementById("content");
+    while (content.firstChild) {
+        content.removeChild(content.firstChild);
+    }
+}
+
+function filterServices(service) {
+    clearServices();
+    currentServices = allServices;
+    var checkedServices = document.querySelectorAll(".service-card input[type='checkbox']:checked");
+    var values = Array.prototype.map.call(checkedServices, function (checkbox) {
+        return checkbox.value;
+    });
+    if (values.length > 0) {
+        currentServices = allServices.filter(function (service) {
+            return values.includes(service.service);
+        });
+    }
+
+    var checkedTags = document.querySelectorAll(".tag-card input[type='checkbox']:checked");
+    var tags = Array.prototype.map.call(checkedTags, function (checkbox) {
+        return checkbox.value;
+    });
+    currentServices = currentServices.filter(function (service) {
+        for(var i = 0; i < tags.length; i++) {
+            if(!service.tags.includes(tags[i])) {
+                return false;
+            }
+        }
+        
+        return true;
+    });
+
+    if(values.length == 0 && tags.length == 0) {
+        currentServices = allServices;
+    }
+    renderServices();
+}
+
+$(document).ready(function () {
+    renderServices();
+});

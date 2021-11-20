@@ -4,8 +4,8 @@
         "address": "4000 Fifth Avenue, Pittburgh, PA, 15213",
         "phone": "412-000-0000",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra et ultrices neque ornare. Sit amet commodo nulla facilisi. Senectus et netus et malesuada fames. At volutpat diam ut venenatis tellus in metus. ",
-        "service": "Legal Service",
-        "tags": ["Low Income"]
+        "service": "Legal",
+        "tags": ["Income"]
     }, 
     {
         "name": "ABC Tutor",
@@ -21,7 +21,7 @@
         "phone": "412-000-0002",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra et ultrices neque ornare. Sit amet commodo nulla facilisi. Senectus et netus et malesuada fames. At volutpat diam ut venenatis tellus in metus. ",
         "service": "Therapist",
-        "tags": ["Low Income", "Accepts Insurance"]
+        "tags": ["Income", "Insurance"]
     }, 
     {
         "name": "ABC Diagnosis",
@@ -29,7 +29,7 @@
         "phone": "412-000-0003",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra et ultrices neque ornare. Sit amet commodo nulla facilisi. Senectus et netus et malesuada fames. At volutpat diam ut venenatis tellus in metus. ",
         "service": "Diagnosis",
-        "tags": ["Accepts Insurance"]
+        "tags": ["Insurance"]
     }, 
     {
         "name": "ABC School",
@@ -37,7 +37,7 @@
         "phone": "412-000-0004",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra et ultrices neque ornare. Sit amet commodo nulla facilisi. Senectus et netus et malesuada fames. At volutpat diam ut venenatis tellus in metus. ",
         "service": "Schools",
-        "tags": ["Low Income"]
+        "tags": ["Income"]
     },
     {
         "name": "ABC Advocate",
@@ -52,7 +52,7 @@
         "address": "4006 Fifth Avenue, Pittburgh, PA, 15213",
         "phone": "412-000-0006",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra et ultrices neque ornare. Sit amet commodo nulla facilisi. Senectus et netus et malesuada fames. At volutpat diam ut venenatis tellus in metus. ",
-        "service": "Support Groups",
+        "service": "Support",
         "tags": []
     }
 ]

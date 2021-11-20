@@ -6,6 +6,39 @@ $.getJSON('assets/directory.json', function (responseObject) {
     currentServices = allServices;
 });
 
+function applyFilters(filters) {
+    var checkedServices = document.querySelectorAll(".service-card input[type='checkbox']");
+    for (var i = 0; i < checkedServices.length; i++) {
+        if(filters.service == checkedServices[i].value) {
+            checkedServices[i].checked = true;
+        }
+    }
+    var checkedTags = document.querySelectorAll(".tag-card input[type='checkbox']");
+    if (filters.Insurance==true) {
+        checkedTags[1].checked = true;
+    } else if (filters.Income ==true && checkedServices[i].value == "Income") {
+        checkedTags[0].checked = true;
+    }
+}
+
+
+var getUrlParameter = function getUrlParameter() {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    var sParameters = {};
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[1] === "true"){
+            sParameters[sParameterName[0]] = true;
+        }
+        else { 
+            sParameters[sParameterName[0]] = sParameterName[1];
+        }
+    }
+    applyFilters(sParameters);
+    
+};
+
 function updateModal(service) {
     document.getElementById("serviceModalLabel").innerHTML = service.name;
     document.getElementById("service-type").innerHTML = "Service Type: " + service.service;
@@ -39,7 +72,7 @@ var renderCard = function (service) {
         cardText.innerHTML = service.desc;
     }
     var cardButton = document.createElement("button");
-    cardButton.className = "btn btn-primary";
+    cardButton.className = "btn btn-primary card-btn";
     cardButton.innerHTML = "Learn More";
     cardButton.type = "button";
     cardButton.setAttribute("data-toggle", "modal");
@@ -99,5 +132,6 @@ function filterServices(service) {
 }
 
 $(document).ready(function () {
-    renderServices();
+    getUrlParameter();
+    filterServices();
 });

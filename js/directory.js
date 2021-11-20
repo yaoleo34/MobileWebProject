@@ -8,9 +8,9 @@ $.getJSON('assets/directory.json', function (responseObject) {
 
 function updateModal(service) {
     document.getElementById("serviceModalLabel").innerHTML = service.name;
-    document.getElementById("service-type").innerHTML = service.service;
+    document.getElementById("service-type").innerHTML = "Service Type: " + service.service;
     document.getElementById("description").innerHTML = service.desc;
-    document.getElementById("address").src = service.address;
+    document.getElementById("address").innerHTML = service.address;
     var phone = document.getElementById("phone");
     phone.href = "tel:" + service.phone;
     phone.innerHTML = service.phone;
@@ -25,6 +25,7 @@ var renderCard = function (service) {
     var content = document.getElementById("content");
     var card = document.createElement("div");
     card.className = "card";
+    card.classList.add("service-item");
     var cardBody = document.createElement("div");
     cardBody.className = "card-body";
     var cardTitle = document.createElement("h5");
@@ -32,7 +33,11 @@ var renderCard = function (service) {
     cardTitle.innerHTML = service.name;
     var cardText = document.createElement("p");
     cardText.className = "card-text";
-    cardText.innerHTML = service.desc.substring(0, cutoff) + "...";
+    if(service.desc.length > cutoff) {
+        cardText.innerHTML = service.desc.substring(0, cutoff) + "...";
+    } else {
+        cardText.innerHTML = service.desc;
+    }
     var cardButton = document.createElement("button");
     cardButton.className = "btn btn-primary";
     cardButton.innerHTML = "Learn More";
@@ -68,7 +73,7 @@ function filterServices(service) {
         return checkbox.value;
     });
     if (values.length > 0) {
-        currentServices = allServices.filter(function (service) {
+        currentServices = currentServices.filter(function (service) {
             return values.includes(service.service);
         });
     }

@@ -24,7 +24,7 @@
                     <label><input class="check" type="checkbox" value="Therapist" onchange="filterServices();"/>Therapist</label>
                 </div>
                 <div class="checkbox">
-                    <label><input class="check" type="checkbox" value="Diagnosis" onchange="filterServices();"/>Diagnosis/Evaluation</label>
+                    <label><input class="check" type="checkbox" value="Diagnosis" onchange="filterServices();"/>Diagnosis</label>
                 </div>
                 <div class="checkbox">
                     <label><input class="check" type="checkbox" value="Legal Service" onchange="filterServices();"/>Legal Service</label>
@@ -63,19 +63,23 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="serviceModalLabel"></h5>
+              
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
+              
             </div>
             <div class="modal-body">
               <div id="map">
                 <iframe id="location" width="100%" height="400" frameborder="0" style="border:0"></iframe>
               </div>
-              <p id="service-type"></p>
+              <h5 class="modal-header-info">Address</h5>
               <p id="address"></p>
-              <span>Phone: <a id="phone"></a></span>
+              <h5 class="modal-header-info">Phone</h5>
+              <span class="space"><a id="phone"></a></span>
+              <h5 class="modal-header-info space">Description</h5>
               <p id="description"></p>
-              
+              <p id="service-type">Service: </p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

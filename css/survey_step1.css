@@ -4,48 +4,33 @@ body {
     font-family: 'Noto Sans';
 }
 
-#title{
-    text-align: center;
-}
 .answer {
     font-size: 1.2rem;
-    width:100%;
+    width:30%;
     background-color: #EBEBEB;
-    border: 1px, solid, #EBEBEB;
+    border: 10px, solid, #EBEBEB;
     border-radius: 35px;
     color: black;
-    /* margin-bottom: 10px; */
     box-shadow: 0px 5px 5px gray;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 15%;
 }
 
-.answer_single{
-    width: 40%;
-    margin-bottom: 0;
-}
-
-.left{
-    padding-left: 25%;
-    padding-right: 5%;
-    
-}
-
-.right{
-    padding-left: 5%;
-    padding-right: 25%;
-}
 .answer:hover {
     background-color: #EBEBEB;
     border: 1px, solid, #EBEBEB;
     color: black;
 }
 
-
+.icon{
+    width: 7%;
+    height:75px; 
+    margin-left: 4%;
+}
 
 .center {
-    text-align: center;  
+    text-align: center;
+    
 }
 
 footer {
@@ -64,26 +49,23 @@ h4{
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    margin-bottom: 2%;
 }
 
-
-@media (max-width: 767.98px) {
-    .answer_single{
-        width: 100%;
+@media screen and (max-width: 1160px){
+    .answer {
+        width: 50%;
     }
-    .left, .single, .right{
-        padding-left: 18%;
-        padding-right: 18%;
-    }
-
-    .answer{
-        margin-bottom: 5%;
-    }
-
 }
 
-/* Medium */
-/* @media (max-width: 991.98px) { ... }
+@media screen and (max-width: 700px){
+    .answer {
+        width: 60%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 
-/* Large */
+    .icon{
+        width: 10%;
+        height:60px;
+    }
+}

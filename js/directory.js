@@ -1,10 +1,13 @@
 var allServices;
 var currentServices;
 
+
 $.getJSON('assets/directory.json', function (responseObject) {
     allServices = responseObject;
     currentServices = allServices;
 });
+
+
 
 function applyFilters(filters) {
     var checkedServices = document.querySelectorAll(".service-card input[type='checkbox']");

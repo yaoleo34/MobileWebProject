@@ -78,6 +78,10 @@ a {
         text-align: center;
     }
 
-
 }
-  
+
+@media (max-width:1199px){
+    .card{
+        width: 100%;
+    }
+}

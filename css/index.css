@@ -4,33 +4,40 @@ body {
     font-family: 'Noto Sans';
 }
 
+#title{
+    text-align: center;
+}
 .answer {
     font-size: 1.2rem;
-    width:30%;
+    width:35%;
     background-color: #EBEBEB;
     border: 1px, solid, #EBEBEB;
     border-radius: 35px;
     color: black;
+    /* margin-bottom: 10px; */
     box-shadow: 0px 5px 5px gray;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.left{
+    border-left: 100px;
+    
+}
+
+.right{
+    border-right: 10%;
+}
 .answer:hover {
     background-color: #EBEBEB;
     border: 1px, solid, #EBEBEB;
     color: black;
 }
 
-.icon{
-    width: 7%;
-    height:75px; 
-    margin-left: 4%;
-}
+
 
 .center {
-    text-align: center;
-    
+    text-align: center;  
 }
 
 footer {

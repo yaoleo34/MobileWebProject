@@ -12,8 +12,8 @@ body {
     border-radius: 35px;
     color: black;
     box-shadow: 0px 5px 5px gray;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .answer:hover {
@@ -23,7 +23,7 @@ body {
 }
 
 .icon{
-    width: 7%;
+    width: 5%;
     height:75px; 
     margin-left: 4%;
 }

@@ -21,7 +21,6 @@ function applyFilters(filters) {
     }
 }
 
-
 var getUrlParameter = function getUrlParameter() {
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');

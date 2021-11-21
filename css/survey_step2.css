@@ -4,6 +4,19 @@ body {
     font-family: 'Noto Sans';
 }
 
+.btn {
+    background-color: rgb(37,54,81);
+}
+
+.btn:hover, .btn:focus {
+    background-color: rgb(37,54,81);
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 
 .center {
     text-align: center;

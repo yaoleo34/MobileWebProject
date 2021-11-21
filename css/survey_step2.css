@@ -4,6 +4,19 @@ body {
     font-family: 'Noto Sans';
 }
 
+.btn {
+    background-color: rgb(37,54,81);
+}
+
+.btn:hover, .btn:focus {
+    background-color: rgb(37,54,81);
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 
 .center {
     text-align: center;
@@ -29,15 +42,3 @@ h4{
     margin-bottom: 1%;
 }
 
-.left{
-    padding-left: 25%;
-    padding-right: 5%;
-    padding-bottom: 4%;
-    
-}
-
-.right{
-    padding-left: 5%;
-    padding-right: 25%;
-    padding-bottom: 4%;
-}

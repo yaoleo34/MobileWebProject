@@ -42,6 +42,7 @@ var getUrlParameter = function getUrlParameter() {
 };
 
 function updateModal(service) {
+    console.log(service.name);
     document.getElementById("serviceModalLabel").innerHTML = service.name;
     document.getElementById("service-type").innerHTML = "Service Type: " + service.service;
     document.getElementById("description").innerHTML = service.desc;
@@ -84,7 +85,9 @@ var renderCard = function (service) {
     cardBody.appendChild(cardButton);
     card.appendChild(cardBody);
     content.appendChild(card);
-    cardButton.addEventListener('click', updateModal(service));
+    cardButton.addEventListener('click', function() {
+        updateModal(service);
+    });
 };
 
 var renderServices = function () {

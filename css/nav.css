@@ -21,6 +21,10 @@ i {
     color: rgb(0,0,0);
 }
 
+.nav-link:hover {
+    background-color: #f1f1f1;
+}
+
 #navbarSupportedContent{
     color: rgb(0, 0, 0);
     font-size: 1rem;

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+
+
 body {
     font-family: 'Noto Sans';
 }
@@ -39,6 +41,19 @@ footer {
 
 h4{
     text-align:center;
+}
+
+.previous {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ddd;
+    color: black;
+    margin-left: 20%;
+}
+
+.previous:hover {
+    background-color: #f1f1f1;
 }
 
 #question {

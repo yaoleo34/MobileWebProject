@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    font-family: 'Noto Sans';
+}
+
+#title{
+    text-align: center;
+}
+.answer {
+    font-size: 1.2rem;
+    width:100%;
+    background-color: #EBEBEB;
+    border: 1px, solid, #EBEBEB;
+    border-radius: 35px;
+    color: black;
+    /* margin-bottom: 10px; */
+    box-shadow: 0px 5px 5px gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15%;
+}
+
+.answer_single{
+    width: 40%;
+    margin-bottom: 0;
+}
+
+.left{
+    padding-left: 25%;
+    padding-right: 5%;
+    
+}
+
+.right{
+    padding-left: 5%;
+    padding-right: 25%;
+}
+.answer:hover {
+    background-color: #EBEBEB;
+    border: 1px, solid, #EBEBEB;
+    color: black;
+}
+
+
+
+.center {
+    text-align: center;  
+}
+
+footer {
+    background-color: rgb(42,40,41);
+}
+
+h4{
+    text-align:center;
+}
+
+#question {
+    font-size: 2em;
+    background-color: #385682;
+    color: white;
+    border: 1px, solid, #385682;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.previous {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ddd;
+    color: black;
+
+   
+    margin-left: 20%;
+}
+
+.previous:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 767.98px) {
+    .answer_single{
+        width: 100%;
+    }
+    .left, .single, .right{
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+
+    .answer{
+        margin-bottom: 5%;
+    }
+
+}
+
+/* Medium */
+/* @media (max-width: 991.98px) { ... }
+
+/* Large */

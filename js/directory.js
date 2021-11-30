@@ -82,6 +82,9 @@ var renderCard = function (service) {
     cardButton.type = "button";
     cardButton.setAttribute("data-toggle", "modal");
     cardButton.setAttribute("data-target", "#serviceModal");
+    cardButton.addEventListener("click", function () {
+        updateModal(service);
+    });
     cardBody.appendChild(cardTitle);
     cardBody.appendChild(cardText);
     cardBody.appendChild(cardButton);

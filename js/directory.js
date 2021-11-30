@@ -5,6 +5,8 @@ var currentServices;
 $.getJSON('assets/directory.json', function (responseObject) {
     allServices = responseObject;
     currentServices = allServices;
+    getUrlParameter();
+    filterServices();
 });
 
 
@@ -85,9 +87,6 @@ var renderCard = function (service) {
     cardBody.appendChild(cardButton);
     card.appendChild(cardBody);
     content.appendChild(card);
-    cardButton.addEventListener('click', function() {
-        updateModal(service);
-    });
 };
 
 var renderServices = function () {
